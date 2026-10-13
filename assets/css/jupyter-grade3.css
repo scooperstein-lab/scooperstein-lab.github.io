@@ -568,12 +568,6 @@ hr {
   z-index: 10;
 }
 
-.alert-warning {
-  background-color: #f4f4f4;
-  border-color: #f4f4f4;
-  color: #303030;
-}
-
 mark,
 .mark {
   background-color: #ffffff;
