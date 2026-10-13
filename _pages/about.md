@@ -8,11 +8,6 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Mitchell Physics Building</p>
-    <p>4242 TAMU, 578 University Drive</p>
-    <p>College Station, TX 77843</p>
-    <p>Office: MIST M225</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -32,3 +27,20 @@ announcements:
 </div>
 
 The Cooperstein Lab at Texas A&M University studies the Higgs boson with proton–proton collision data from the Large Hadron Collider (LHC) at CERN. We focus on two rare processes: Higgs boson pair production in the four-bottom-quark final state ($$\mathrm{HH} \to 4\mathrm{b}$$), which directly probes the Higgs self-interaction and the shape of the Higgs potential, and the Higgs decay to muons ($$\mathrm{H} \to \mu^+\mu^-$$), which tests whether the Higgs gives mass to second-generation particles as it does to the third. To learn more, see our [people](/people/) page or get in touch.
+
+## Contact
+
+<div style="display:flex; flex-wrap:wrap; gap:1.5rem; margin-top:0.75rem;">
+  <div style="flex:1; min-width:220px; border-left:4px solid var(--global-theme-color, #B509AC); padding-left:1rem;">
+    <div style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; opacity:0.65;">Office</div>
+    <div style="font-size:1.15rem; font-weight:600; margin:0.2rem 0;">MIST M225</div>
+    <div>Mitchell Physics Building</div>
+    <a href="https://www.google.com/maps/search/?api=1&query=Mitchell+Physics+Building+College+Station+TX" target="_blank">📍 View on map</a>
+  </div>
+  <div style="flex:1; min-width:220px; border-left:4px solid var(--global-theme-color, #B509AC); padding-left:1rem;">
+    <div style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; opacity:0.65;">Mailing address</div>
+    <div style="margin-top:0.2rem;">Department of Physics and Astronomy</div>
+    <div>578 University Drive</div>
+    <div>College Station, TX 77843</div>
+  </div>
+</div>
