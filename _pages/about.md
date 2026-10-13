@@ -2,16 +2,17 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Department of Physicsi and Astronomy, <a href='https://www.tamu.edu'>Texas A&M University</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Mitchell Physics Building</p>
+    <p>4242 TAMU, 578 University Drive</p>
+    <p>College Station, TX 77843</p>
+    <p>Office: MIST M225</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -26,9 +27,10 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+The Cooperstein Lab at Texas A&M University studies the Higgs boson using proton-proton collision data collected at the Large Hadron Collider (LHC) at CERN.
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Our group focuses on two research topics to understand the properties of the Higgs boson:
+- **Higgs boson pair production in four-bottom-quark final state ($$\mathrm{HH} \to 4\mathrm{b}$$):** An extremely rare process, which directly probes the Higgs boson's self-interaction -- a property that shapes the Higgs potential and the stability of the universe.
+- **Higgs boson decay to muons ($$\mathrm{H} \to \mu^+\mu^-$$):** Measuring this decay tests whether the Higgs gives mass to the second generation of matter particles the same way it does to the heavier third generation.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+See the [people](/people/) page or get in touch.
