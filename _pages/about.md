@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Department of Physicsi and Astronomy, <a href='https://www.tamu.edu'>Texas A&M University</a>
+subtitle: Department of Physics and Astronomy, <a href='https://www.tamu.edu'>Texas A&M University</a>
 
 profile:
   align: right
@@ -27,10 +27,8 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-The Cooperstein Lab at Texas A&M University studies the Higgs boson using proton-proton collision data collected at the Large Hadron Collider (LHC) at CERN.
+<div class="alert alert-warning text-center" role="alert" style="font-size: 1.5rem; font-weight: bold;">
+  🚧 Site under construction. Check back soon! 🚧
+</div>
 
-Our group focuses on two research topics to understand the properties of the Higgs boson:
-- **Higgs boson pair production in four-bottom-quark final state ($$\mathrm{HH} \to 4\mathrm{b}$$):** An extremely rare process, which directly probes the Higgs boson's self-interaction -- a property that shapes the Higgs potential and the stability of the universe.
-- **Higgs boson decay to muons ($$\mathrm{H} \to \mu^+\mu^-$$):** Measuring this decay tests whether the Higgs gives mass to the second generation of matter particles the same way it does to the heavier third generation.
-
-See the [people](/people/) page or get in touch.
+The Cooperstein Lab at Texas A&M University studies the Higgs boson with proton–proton collision data from the Large Hadron Collider (LHC) at CERN. We focus on two rare processes: Higgs boson pair production in the four-bottom-quark final state ($$\mathrm{HH} \to 4\mathrm{b}$$), which directly probes the Higgs self-interaction and the shape of the Higgs potential, and the Higgs decay to muons ($$\mathrm{H} \to \mu^+\mu^-$$), which tests whether the Higgs gives mass to second-generation particles as it does to the third. To learn more, see our [people](/people/) page or get in touch.
