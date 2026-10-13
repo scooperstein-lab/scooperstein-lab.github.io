@@ -9,8 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
@@ -26,7 +26,7 @@ announcements:
   🚧 Site under construction. Check back soon! 🚧
 </div>
 
-The Cooperstein Lab at Texas A&M University studies the Higgs boson with proton–proton collision data from the Large Hadron Collider (LHC) at CERN. We focus on two rare processes: Higgs boson pair production in the four-bottom-quark final state ($$\mathrm{HH} \to 4\mathrm{b}$$), which directly probes the Higgs self-interaction and the shape of the Higgs potential, and the Higgs decay to muons ($$\mathrm{H} \to \mu^+\mu^-$$), which tests whether the Higgs gives mass to second-generation particles as it does to the third. To learn more, see our [people](/people/) page or get in touch.
+The Cooperstein Lab at Texas A&M University, led by Stephane Cooperstein, studies the Higgs boson with proton–proton collision data from the Large Hadron Collider (LHC) at CERN. We focus on two rare processes: Higgs boson pair production in the four-bottom-quark final state ($$\mathrm{HH} \to 4\mathrm{b}$$), which directly probes the Higgs self-interaction and the shape of the Higgs potential, and the Higgs decay to muons ($$\mathrm{H} \to \mu^+\mu^-$$), which tests whether the Higgs gives mass to second-generation particles as it does to the third. To learn more, see our [people](/people/) page or get in touch.
 
 ## Contact
 
