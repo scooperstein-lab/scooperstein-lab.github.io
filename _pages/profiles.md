@@ -15,7 +15,7 @@ profiles:
 
   # Aashwin
   - align: left
-    image: aashwin_pic.png
+    image: aashwin_pic.jpeg
     content: aashwin.md
     image_circular: false
 
