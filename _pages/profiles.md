@@ -26,7 +26,7 @@ profiles:
   #  image_circular: false
 
   # Aditya
-  - align: left
+  - align: right
     image: aditya_pic.jpeg
     content: aditya.md
     image_circular: false
