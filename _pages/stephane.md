@@ -1,5 +1,5 @@
 <div class="person-name">Stephane Cooperstein</div>
-<div class="person-role">Principal Investigatior</div>
+<div class="person-role">Principal Investigator</div>
 
 Something cool about Stephane! :D
 
