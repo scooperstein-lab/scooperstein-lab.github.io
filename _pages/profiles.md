@@ -20,13 +20,13 @@ profiles:
     image_circular: false
 
   # George
-  #- align: right
+  - align: right
   #  image: gfagan_pic.jpg
-  #  content: gfagan.md
+    content: gfagan.md
   #  image_circular: false
 
   # Aditya
-  - align: right
+  - align: left
     image: aditya_pic.jpeg
     content: aditya.md
     image_circular: false
