@@ -1,0 +1,204 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/* -----------------------------------------------------------------------------
+   Cooperstein Lab palette override (T10)
+   Local copy of al_folio_core's main.scss plus this block. Only theme CSS
+   variables are changed. Contrast ratios (WCAG AA needs 4.5:1 for text):
+   light: text 15.4, muted 6.2, accent 15.2, footer 9.8
+   dark:  text 14.3, muted 7.4, accent 8.0, footer 12.8
+   -------------------------------------------------------------------------- */
+:root {
+  --global-bg-color: #fcfcfa;
+  --global-text-color: #1f2328;
+  --global-text-color-light: #5a6068;
+  --global-theme-color: #500000; /* TAMU maroon */
+  --global-hover-color: #500000;
+  --global-hover-text-color: #ffffff;
+  --global-card-bg-color: #ffffff;
+  --global-code-bg-color: #f1f0ec;
+  --global-divider-color: rgba(31, 35, 40, 0.12);
+  --global-footer-bg-color: #1f2328;
+  --global-footer-text-color: #c9ccd1;
+  --global-footer-link-color: #ffffff;
+  --global-newsletter-bg-color: #fcfcfa;
+  --global-newsletter-text-color: #1f2328;
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #16171a;
+  --global-text-color: #e6e6e3;
+  --global-text-color-light: #a3a7ad;
+  --global-theme-color: #e59a9a;
+  --global-hover-color: #e59a9a;
+  --global-hover-text-color: #16171a;
+  --global-card-bg-color: #1e2024;
+  --global-code-bg-color: #23252a;
+  --global-divider-color: #34363b;
+  --global-footer-bg-color: #d9dadd;
+  --global-footer-text-color: #16171a;
+  --global-footer-link-color: #000000;
+  --global-newsletter-bg-color: #d9dadd;
+  --global-newsletter-text-color: #16171a;
+}
+
+/* -----------------------------------------------------------------------------
+   Typography and layout (T11)
+   Fonts are self-hosted via assets/fonts/fonts.css (loaded by the gem's head).
+   -------------------------------------------------------------------------- */
+:root {
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-heading: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --measure: 68ch;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-title,
+.navbar-brand {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.6rem; margin-top: 2rem; }
+h3 { font-size: 1.25rem; }
+
+/* Readable line length for running text */
+article p,
+article li,
+.post p,
+.post li {
+  max-width: var(--measure);
+}
+
+/* Small mono labels (physics feel) */
+.person-role,
+.contact-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* People page (moved here from _pages/profiles.md) */
+.person-name { font-size: 1.5rem; font-weight: 600; margin-bottom: 0.1rem; }
+.person-role { opacity: 0.75; margin-bottom: 0.75rem; }
+.person-links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+.person-links a,
+.person-links span {
+  border: 1px solid var(--global-theme-color);
+  border-radius: 999px;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.person-links a:hover {
+  background: var(--global-theme-color);
+  color: var(--global-hover-text-color);
+}
+
+/* -----------------------------------------------------------------------------
+   Motion and interaction (T12)
+   All transitions are 150-250 ms ease and are switched off in the
+   prefers-reduced-motion block at the end of this section.
+   -------------------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem; /* keep anchored headings clear of the fixed navbar */
+}
+
+a,
+.nav-link,
+.navbar-brand,
+.person-links a,
+.card,
+.hoverable,
+.btn {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 200ms ease,
+    transform 200ms ease;
+}
+
+.card:hover,
+.hoverable:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Visible keyboard focus (stronger than the theme default) */
+:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+
+  .card:hover,
+  .hoverable:hover {
+    transform: none;
+  }
+}
