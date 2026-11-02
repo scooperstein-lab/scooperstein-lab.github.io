@@ -25,8 +25,14 @@ profiles:
     content: george.md
   #  image_circular: false
 
-  # Aditya
+  # Marco
   - align: left
+    image: marco_pic.jpg
+    content: marco.md
+    image_circular: false
+
+  # Aditya
+  - align: right
     image: aditya_pic.jpeg
     content: aditya.md
     image_circular: false
