@@ -1,6 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 @charset "utf-8";
 
 /* Built-in Sass modules you’ll likely use across partials */
@@ -10,7 +11,7 @@
 /* Configure your design tokens BEFORE loading any of your partials.
    Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
 @use "variables" with (
-  $max-content-width: {{ site.max_width | default:  "930px" }}
+  $max-content-width: {{site.max_width | default: "930px"}}
 );
 
 /* Your project partials — convert these files to `@use "variables";`
@@ -107,9 +108,16 @@ h6,
   letter-spacing: -0.01em;
 }
 
-h1 { font-size: 2.2rem; }
-h2 { font-size: 1.6rem; margin-top: 2rem; }
-h3 { font-size: 1.25rem; }
+h1 {
+  font-size: 2.2rem;
+}
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
 
 /* Readable line length for running text */
 article p,
@@ -129,9 +137,21 @@ article li,
 }
 
 /* People page (moved here from _pages/profiles.md) */
-.person-name { font-size: 1.5rem; font-weight: 600; margin-bottom: 0.1rem; }
-.person-role { opacity: 0.75; margin-bottom: 0.75rem; }
-.person-links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+.person-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+.person-role {
+  opacity: 0.75;
+  margin-bottom: 0.75rem;
+}
+.person-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
 .person-links a,
 .person-links span {
   border: 1px solid var(--global-theme-color);

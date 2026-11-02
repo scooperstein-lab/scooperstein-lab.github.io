@@ -21,7 +21,7 @@ profiles:
 
   # George
   - align: right
-  #  image: gfagan_pic.jpg
+    #  image: gfagan_pic.jpg
     content: george.md
   #  image_circular: false
 

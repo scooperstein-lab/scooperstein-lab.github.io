@@ -17,11 +17,13 @@ announcements:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
+
 #latest_posts:
 #  enabled: true
 #  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
 #  limit: 3 # leave blank to include all the blog posts
 ---
+
 <div style="background:#fff3cd; color:#664d03; padding:1rem; border-radius:8px; text-align:center; font-size:1.5rem; font-weight:bold;">
   🚧 Site under construction. Check back soon! 🚧
 </div>
